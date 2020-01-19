@@ -1,3 +1,250 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/*body styles */
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*nav styles */
+nav{
+	display: flex;
+	height: 8vh;
+	width: 100%;
+}
+nav a {
+	color: grey;
+	text-decoration: none;
+	justify-content: space-between;
+	padding: 3.5%;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 1%;
+}
+ nav a:last-child {
+	transform: translateY(-8%);
+}  
+
+/*header styles*/
+header.home {
+	margin-top: 8%;
+	width: 100%;
+	display: flex;
+}
+header.home #title {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+}
+h1 {
+	font-size: 60px;
+	letter-spacing: 2px;
+}
+header.home div {
+	width: 49%;
+	justify-content: space-between;
+	align-items: center;
+}
+button.start {
+	border: 1px solid #4D4E4F;
+	color: black;
+	font-size: 15px;
+	width: 30%;
+	padding: 1%;
+	letter-spacing: 1px;
+}
+
+/*content styles */
+#content-top {
+	display: flex;
+	justify-content: space-between;
+}
+p { 
+	 line-height: 1.3em; 
+}  
+#content-top div {
+	width: 47%;
+}
+.middle-img {
+	width: 100%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+#content-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+#content-bottom div p {
+	height: 30%;
+}
+#content-bottom div {
+	width: 32%;
+}
+hr {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+/*footer styles */
+footer {
+	height: 16vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.copyright {
+	text-align: center;
+	padding: 3% 1% 10%;
+}
+
+/* services page styles start here */
+
+/* services header */
+img.services-header-img {
+	width: 100%;
+	margin-bottom: 3%;
+	margin-top: 3%;
+}
+hr.services-top {
+	margin-top: 5%;
+	margin-bottom: 0;
+}
+
+/* grid section styles */ 
+section.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+div.box {
+	width: 48%;
+	border: 1px solid black;
+	background-color: #efeff5;
+	display: flex;
+	flex-direction: column;
+	padding: 2%;
+	margin-top: 4%; 
+}
+.box button {
+	width: 35%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	background-color: #fafafa;
+	border-radius: 5px;
+	margin-top: 4%;
+	border: 1px solid black;
+}
+
+/*services page bottom content */
+hr.services-foot {
+	border-top: 2px solid black;
+}
+section.facts {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; 
+}
+.facts div {
+	width: 48%;
+}
+.facts ul{
+	list-style-type: square;
+	transform: translateX(5%);
+	line-height: 2.0em;
+}
+section.facts div.column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+footer.services {
+	margin-top: 5%;
+}
+
+/* stretch goal styles */
+@media screen and (max-width: 800px) {
+	section.grid {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+	}
+	section.facts {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	div.box {
+		width: 100%;
+	}
+}
 
 
