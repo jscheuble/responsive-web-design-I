@@ -293,6 +293,7 @@ footer.services {
 /* media query styles for phone view */
 
 @media (max-width: 500px) {
+    /* home page styles */
     img.logo {
         margin-bottom: 10%;
     }
@@ -322,6 +323,17 @@ footer.services {
     #content-bottom div {
         width: 100%;
         margin-top: 5%;
+    }
+    /* services page styles */
+    img.services-header-img {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    section.facts {
+        width: 100%;
+    }
+    #footer-img {
+        transform: translateX(-7%);
     }
 }
 
