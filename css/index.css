@@ -70,6 +70,10 @@ h1, h2, h3, h4, h5 {
 	width: 80%;
 	margin: 0 auto;
 }
+.nav-cont {
+    width: 80%;
+    margin: 0 auto;
+}
 
 /*nav styles */
 nav{
@@ -236,7 +240,8 @@ footer.services {
 }
 
 /* media query for tablet view */
-@media screen and (max-width: 800px) {
+
+@media (max-width: 800px) {
     /* home page */
     .nav-cont {
         flex-direction: column-reverse;
@@ -285,8 +290,39 @@ footer.services {
     }
 }
 
-
 /* media query styles for phone view */
 
+@media (max-width: 500px) {
+    img.logo {
+        margin-bottom: 10%;
+    }
+    .nav-cont {
+        width: 100%;
+    }
+    .nav-cont nav {
+        flex-direction: column;
+    }
+    .nav-cont nav a {
+        text-align: center;
+        border-top: 1px solid gray;
+    }
+    .nav-cont nav a:last-child {
+        border-bottom: 1px solid gray;
+    }
+    #content-top {
+        flex-direction: column;
+    }
+    #content-top div {
+        width: 100%;
+        margin-top: 5%;
+    }
+    #content-bottom {
+        flex-direction: column;
+    }
+    #content-bottom div {
+        width: 100%;
+        margin-top: 5%;
+    }
+}
 
 
